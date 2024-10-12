@@ -16,7 +16,7 @@ const Header = () => {
         zIndex: 1000, // Ensure the header is above other content
       }}
     >
-      <Typography variant="h1">Lottery</Typography>
+      <Typography variant="h1">Elements Lottery</Typography>
     </Box>
   );
 };
