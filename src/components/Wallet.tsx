@@ -6,21 +6,25 @@ const Wallet = () => {
   const isConnected = account !== undefined;
 
   return (
-    <Box
-      sx={{
-        position: "absolute",
-        top: "16px",
-        right: "16px",
-        display: "flex",
-        justifyContent: "flex-end",
-      }}
-    >
+    <>
       {isConnected ? (
-        <Button onClick={deactivate}>Disconnect</Button>
+        <Button
+          variant="contained"
+          sx={{ m: 3, position: "absolute", top: 4, right: 4, color: "white" }}
+          onClick={deactivate}
+        >
+          Disconnect
+        </Button>
       ) : (
-        <Button onClick={activateBrowserWallet}>Connect</Button>
+        <Button
+          variant="contained"
+          sx={{ m: 3, position: "absolute", top: 4, right: 4, color: "white" }}
+          onClick={activateBrowserWallet}
+        >
+          Connect
+        </Button>
       )}
-    </Box>
+    </>
   );
 };
 
